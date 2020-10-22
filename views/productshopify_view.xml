@@ -12,20 +12,5 @@
   				</xpath>
 			</field>
 		</record>
-
-		<record id="sale_order_shopify" model="ir.ui.view">
-			<field name="name">sale.order.shopify</field>
-			<field name="model">sale.order</field>
-			<field name="inherit_id" ref="sale.view_order_form"/>
-			<field name="arch" type="xml">
-				<xpath expr="//field[@name='payment_term_id']" position="after">
-					<group>
-						<field name="x_studio_metodo_de_pago"/>
-						<field name="x_studio_metodo_de_envio_shopify"/>
-						<field name="x_studio_pago_con_gift_cards"/>
-					</group>
-				</xpath>
-			</field>
-		</record>
 	</data>
 </odoo>
