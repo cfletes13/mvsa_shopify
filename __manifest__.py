@@ -10,6 +10,7 @@
     'depends': ['sale', 'product'],
     'data': [
             'views/productshopify_view.xml',
+            'views/saleordershopify_view.xml',
 
     ],
     'installable': True,
