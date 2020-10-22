@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="product_template_shopify" model="ir.ui.view">
+			<field name="name">product.template.shopify</field>
+			<field name="model">product.template</field>
+			<field name="inherit_id" ref="stock.product_template_form_view_procurement_button"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='allow_negative_stock']" position="after">
+					<field name="x_studio_website_shopify"/>
+					<field name="x_studio_image_shopify" options="{&quot;size&quot;: [0, 90]}" widget="image" string="Imagen Shopify"/>
+  				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>
